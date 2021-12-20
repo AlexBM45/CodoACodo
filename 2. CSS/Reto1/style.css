@@ -1,0 +1,19 @@
+nav {
+    text-align: right;
+    background-color: rgb(167, 167, 167);
+    padding: 0.75rem;
+}
+
+main{
+    padding: 0.75rem 14rem;
+    
+}
+
+img {
+    width: 15%;
+}
+
+footer {
+    background-color: rgb(167, 167, 167);
+    text-align: center;
+}

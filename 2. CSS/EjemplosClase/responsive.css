@@ -1,0 +1,15 @@
+h2{
+    font-size: x-small;
+}
+
+div{
+    background-color: dimgray;
+}
+
+#margen{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    /* Se mueve al centro de la página de forma automática */
+    margin-left: auto;
+    margin-right: auto;
+}

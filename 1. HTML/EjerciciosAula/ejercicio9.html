@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <p>Con HTML podremos construir los formularios, con diversos tipos de campos, como cajas de texto, botones de radio, cajas de selección, menús desplegables, etc. Sin embargo, debe quedar claro que desde HTML no se puede procesar la información, sino que deberemos contar con las herramientas de programación de Back-End</p>
+    <p>Los formularios son definidos por medio de las etiquetas FORM y su cierre. Entre estas dos etiquetas colocaremos todos los campos y botones que componen el formulario. Dentro de esta etiqueta <b>form</b> debemos especificar algunos atributos:</p>
+    <p>action: define el tipo de acción a llevar a cabo con el formulario. Existen dos formas de enviar la información a que sea procesada:</p>
+    <ul>
+        <li>El formulario es enviado a una dirección de correo electrónico: "form action="mailto:direccion@correo.com" ..."</li>
+        <li>El formulario es enviado a un programa o script que procesa su contenido: "form action="dirección del archivo" ..."</li>
+    </ul>
+    <p>method: Este atributo se encarga de especificar la forma en la que el formulario es enviado. Los dos valores posibles que puede tomar esta atributo son post y get.</p>
+    <p>enctype: Se utiliza para indicar la forma en la que viajará la información que se mande por el formulario. En el caso más corriente, enviar el formulario por correo electrónico, el valor de este atributo debe de ser "text/plain". Así conseguimos que se envíe el contenido del formulario como texto plano dentro del email.</p>
+
+    <form method="POST" action="ingreso.php" name="Prueba">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido">
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <label for="contrasenia">Contraseña</label>
+        <input type="password" name="contrasenia">
+
+        <select name="pais" id="pais">
+            <option value="ARG">Argentina</option>
+            <option value="BR">Brasil</option>
+            <option value="CH">Chile</option>
+        </select>
+
+        <input type="radio" name="estacion" value="1">Primavera
+        <br>
+        <input type="radio" name="estacion" value="2">Verano
+        <br>
+        <input type="radio" name="estacion" value="3">Otoño
+
+        <input type="checkbox" name="jamon">Me gusta el jamón
+
+        <input type=hidden name="clave" value="1234">
+
+        <input type=button value="Texto escrito en el botón">
+
+        <input type="submit" value="Ingresar">
+        <button value="Ingresar">Ingresar</button>
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
