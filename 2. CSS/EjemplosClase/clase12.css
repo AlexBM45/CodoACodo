@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Pushster', cursive;
+}
+
+header {
+    width: 100%;
+    height: 400px;
+    /* Incrustar una imagen como fondo */
+    background-image: url(./IMG/Website-Frontpage-Header-02.jpg);
+    /* Adapata a todo el tamaño de la pantalla la imagen */
+    background-size: cover;
+}
+
+h1:hover {
+    color: white;
+    background-color: thistle;
+    position: relative;
+    top: 50px;
+}
+
+.contenedor-barra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-header {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a{
+    color: white
+}
+
+nav a:hover {
+    color: salmon;
+}
+
+nav a:active {
+    /* Cuando hace un click con el mouse */
+    color: chartreuse;
+}
+
+nav a::before {
+    content: "/";
+}
+
+.contenedor-main {
+     width: 800px;
+     height: 300px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ /* Se puede modificar el icono llamando a su clase */
+ .fas {
+     color: white;
+ }
+
+ .pseudo {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ li {
+     padding-left: 15px;
+     list-style: none;
+ }
