@@ -1,0 +1,29 @@
+nav img {
+    width: 5%;
+}
+
+.esp1 {
+    background-color: blue;
+    border: 2px solid black;
+}
+
+.esp2 {
+    background-color: blueviolet;
+    border: 2px solid black;
+}
+
+.esp3 {
+    background-color: violet;
+    border: 2px solid black;
+}
+
+.esp4 {
+    background-color: rosybrown;
+    border: 2px solid black;
+}
+
+footer {
+    height: 100px;
+    background-color: #214d67;
+    color: white;
+}
