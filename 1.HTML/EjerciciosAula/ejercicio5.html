@@ -1,0 +1,74 @@
++<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body background="win.png">
+    <h1>Etiquetas básicas en HTML</h1>
+    <p>Las tablas son definidas por las etiquetas <b>table</b> y su cierre.</p>
+    <p>Dentro de estas dos etiquetas colocaremos todas las otras etiquetas de las tablas, hasta llegar a las celdas. Dentro de las celdas ya es permitido colocar textos e imágenes que darán el contenido a la tabla.</p>
+    <p>Las tablas son descritas por líneas de arriba a abajo (y luego por columnas de izquierda a derecha)</p>
+    <p>Cada una de estas líneas, llamada fila, es definida por otra etiqueta y su cierre: <b>tr</b></p>
+    <p>Asimismo, dentro de cada línea, habrá diferentes celdas. Cada una de estas celdas será definida por otra etiqueta: <b>td</b>. Dentro de ésta y su cierre será donde coloquemos nuestro contenido, el contenido de cada celda.</p>
+    <!--Tabla de  2x3-->
+    <table>
+        <tbody>
+         <!--RENGLON tr-->
+            <tr>
+               <td>
+                   Renglón 1, columna 1
+               </td>
+               <td>
+                   Renglón 1, columna 2
+               </td>
+            </tr>
+            <tr>
+                <td>
+                    Renglón 2, columna 1
+                </td>
+                <td>
+                    Renglón 2, columna 2
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Renglón 3, columna 1
+                </td>
+                <td>
+                    Renglón 3, columna 2
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>También es parte de una tabla la etiqueta TH (Table Header), que sirve para crear una celda cuyo contenido posea un título o cabecera de la tabla.</p>
+    <table>
+        <tr>
+            <th>Celda 1, linea 1</th>
+            <th> Celda 2, linea 1</th>
+        </tr>
+        <tr>
+            <td> Celda 1, linea 2</td>
+            <td> Celda 2, linea 2</td>
+        </tr>
+    </table>
+    <h4>Atributos para tablas</h4>
+    <p>A partir de esta idea simple y sencilla, las tablas adquieren otra magnitud cuando les incorporamos toda una lista de atributos aplicados sobre cada tipo de etiquetas que las componen.</p>
+    <ol>
+        <li>cellspacing: es el espacio entre celdas de la tabla.</li>
+        <li>cellpadding: es el espacio entre el borde de la celda y su contenido.</li>
+        <li>border: es el número de píxeles que tendrá el borde de la tabla.</li>
+        <li>bordercolor: es el color a asignar al borde de la tabla.</li>
+    </ol>
+    <p>Es de destacar que si definimos una celda de un ancho 100 por ejemplo, y colocamos en la celda un contenido como una imagen que mida más de 100 pixeles, la celda crecerá en horizontal todo lo necesario para que la imagen quepa. Si el elemento, aunque más ancho, fuera divisible (como un texto) el ancho sería respetado y el texto crecería hacia abajo o lo que es lo mismo, en altura, como señalábamos en el anterior párrafo.</p>
+    <p>Los atributos rowspan y colspan son también utilizados frecuentemente. Gracias a ellos es posible expandir celdas fusionando éstas con sus vecinas. El valor que pueden tomar estas etiquetas es numérico. El número representa la cantidad de celdas fusionadas.</p>
+    <p>
+        Recomendación: Siempre que coloques una imagen de fondo, debemos poner también un color de fondo cercano al color de la imagen.
+    </p>
+    <p>
+        Esto se debe a que, al colocar una imagen de fondo, el texto de la página debemos colocarlo en un color que contraste suficientemente con dicho fondo. Si el visitante no puede ver el fondo, puede que el texto no contraste lo suficiente con el color de fondo por defecto de la web.
+    </p>
+</body>
+</html>

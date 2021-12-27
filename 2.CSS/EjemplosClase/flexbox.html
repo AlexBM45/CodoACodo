@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+    <main>
+        <h1>Flexbox</h1>
+        <div>
+            <p>Es una metodología que incorpora CSS para trabajar con las posiciones. Toma lo mejor de las posiciones, los display y todas las funciones para las posiciones y los resume en unos pocos comandos.</p>
+            <p>Se trabaja con FILAS y COLUMNAS</p>
+            <p>Se debe tener un contenedor padre que va a contener a sus hijos y estos son los que se van a mover, ya que es al padre al que se le aplica DISPLAY:FLEX; y así poder manipular a los hijos.</p>
+            <p>FLEX tiene diferentes atributos, el que viene por defecto es WRAP e indica como se acomodan las cajas en la página en caso de que no alcance el espacio de forma horizontal.</p>
+            <p>NOWRAP modifica los tamaños para que todos los elementos se sitúen en la pimera fila del contenedor padre.</p>
+            <p>También existen las opciones FLEX-START, FELX-CENTER, FLEX-END para indicar como se van a localizar los elementos en las filas, si al final, al inicio o en el centro.</p>
+        </div>
+        <div>
+            <h4>ALING</h4>
+            <p>Manipula los elementos hijos en forma vertical y les indica en que posiciones podrían estar</p>
+            <p>ALING-SELF permite modificar esta posición sólo de un hijo.</p>
+        </div>
+        <h4>NOWRAP</h4>
+        <div class="padre-flex">
+            <div class="box" id="flex1">1</div>
+            <div class="box" id="flex2">2</div>
+            <div class="box" id="flex3">3</div>
+            <div class="box" id="flex1">1</div>
+            <div class="box" id="flex2">2</div>
+            <div class="box" id="flex3">3</div>
+        </div>
+        <h4>WRAP</h4>
+        <div class="padre-flex1">
+            <div class="box" id="flex1">1</div>
+            <div class="box" id="flex2">2</div>
+            <div class="box" id="flex3">3</div>
+            <div class="box" id="flex1">1</div>
+            <div class="box" id="flex2">2</div>
+            <div class="box" id="flex3">3</div>
+        </div>
+        <h4>Ejemplo</h4>
+        <div class="padre-flex2">
+            <div class="box" id="flex4">1</div>
+            <div class="box" id="flex5">
+                <a href="#">Inicio</a>
+                <a href="#">Anuncios</a>
+                <a href="#">Quienes</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
